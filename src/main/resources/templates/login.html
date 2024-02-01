@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>login</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+</head>
+
+<body>
+	<div class="background">
+		<div class="shape"></div>
+		<div class="shape"></div>
+	</div>
+	<form th:action="@{/validateUser}" th:object="${log}" method="post">
+		<h3>Login Here</h3>
+		<p th:text="${loginStatus}" class="text-info"></p>
+
+		<label for="username">Username</label>
+		<input type="text" placeholder="Email or Phone" id="username" th:field="*{email}">
+
+		<label for="pwd">Password</label>
+		<input type="password" placeholder="Password" id="pwd" th:field="*{pwd}">
+
+		<button value="submit">Log In</button>
+		<div class="my-3 text-center">Dont have an account ? <a href="/reg" class="btn btn-secondary ">Register</a>
+		</div>
+
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

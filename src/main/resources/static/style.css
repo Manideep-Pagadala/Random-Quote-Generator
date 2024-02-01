@@ -1,0 +1,41 @@
+body {
+	background-color: #f0f0f0;
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.card-container {
+	max-width: 1000px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.row-container {
+	background: linear-gradient(to right, rgb(0, 128, 64), rgb(0, 128, 64),  rgb(0, 255, 64));
+	border-radius: 10px;
+	overflow: hidden;
+	height: 100%;
+}
+
+.form-container {
+	background-color: white;
+	border-radius: 5px;
+	max-width: 500px;
+	padding: 20px;
+}
+
+.text-container h2,
+.text-container p {
+	color: rgb(255, 255, 255);
+	font-style: bold;
+	margin: 0;
+}
+
+.text-center img {
+	max-width: 100%;
+	max-height: 75px;
+	height: auto;
+	margin-bottom: 10px;
+}
+

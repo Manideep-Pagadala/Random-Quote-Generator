@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    password: Manideep@98
+    url: jdbc:mysql://localhost:3306/deepu
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: bgic txqx qhwv foxc
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: manideep.pagadala@gmail.com
+  main:
+    banner-mode: 'off'
+    
+    
+#logging:
+#  file:
+#    name: sample.log
+
+app:
+ messages:
+  "InvalidLogin": "Invalid Credentials"
+  "succMsg": "Registartion Successful"
+  "RegSuccessMsg": "Registration Success"
+  "RegFailMsg": "Registration Failed, Please try again..."
+  "pwdCheckMsg": "Both Passwords should be same"
+  
